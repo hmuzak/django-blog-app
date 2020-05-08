@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="content-detail container py-4">
+        <h3 style="color: black !important;">{{ post.title }}</h3>
+        <p style="color: grey !important;">{{ post.description | safe }}</p>
+    </div>
+{% endblock %}

@@ -1,0 +1,328 @@
+body{
+    background-color: #ffffff;
+}
+
+.navigation-clean-search {
+    background: #fff;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    color: #333;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+    .navigation-clean-search {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.navigation-clean-search .navbar-brand {
+    font-weight: bold;
+    color: inherit;
+}
+
+.navigation-clean-search .navbar-brand:hover {
+    color: #222;
+}
+
+.navigation-clean-search .navbar-toggler {
+    border-color: #ddd;
+}
+
+.navigation-clean-search .navbar-toggler:hover,
+.navigation-clean-search .navbar-toggler:focus {
+    background: none;
+}
+
+.navigation-clean-search .navbar-toggler {
+    color: #888;
+}
+
+.navigation-clean-search .navbar-collapse,
+.navigation-clean-search .form-inline {
+    border-top-color: #ddd;
+}
+
+.navigation-clean-search .navbar-nav a.active,
+.navigation-clean-search .navbar-nav>.show>a {
+    background: none;
+    box-shadow: none;
+}
+
+.navigation-clean-search.navbar-light .navbar-nav a.active,
+.navigation-clean-search.navbar-light .navbar-nav a.active:focus,
+.navigation-clean-search.navbar-light .navbar-nav a.active:hover {
+    color: #8f8f8f;
+    box-shadow: none;
+    background: none;
+    pointer-events: none;
+}
+
+.navigation-clean-search.navbar .navbar-nav .nav-link {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.navigation-clean-search.navbar-light .navbar-nav .nav-link {
+    color: #465765;
+}
+
+.navigation-clean-search.navbar-light .navbar-nav .nav-link:focus,
+.navigation-clean-search.navbar-light .navbar-nav .nav-link:hover {
+    color: #37434d !important;
+    background-color: transparent;
+}
+
+.navigation-clean-search .action-button,
+.navigation-clean-button .action-button:active {
+    background: #56c6c6;
+    border-radius: 20px;
+    font-size: inherit;
+    color: #fff !important;
+    box-shadow: none;
+    border: none;
+    text-shadow: none;
+    padding: 8px 20px;
+    transition: background-color 0.25s;
+}
+
+
+
+.navigation-clean-search .form-inline label {
+    color: #ccc;
+}
+
+.navigation-clean-search .form-inline .search-field {
+    background: none;
+    border: none;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
+    color: #ccc;
+    box-shadow: none;
+    color: inherit;
+    transition: border-bottom-color 0.3s;
+}
+
+@media (max-width:767px) {
+    .navigation-clean-search .form-inline .search-field {
+        display: inline-block;
+        width: 80%;
+    }
+}
+
+.navigation-clean-search .form-inline .search-field {
+    color: #e1e1e1;
+}
+
+.navbar.navbar-light.navbar-expand-md.navigation-clean-search {
+    background-color: rgba(81, 81, 81, 0.54);
+}
+
+.link-item {
+    margin-right: 10px;
+}
+
+.text-white.title-content-top {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.category-link {
+    padding: 6px 20px;
+    background-color: #ffffff;
+    color: rgb(176, 176, 176);
+    border-radius: 20px;
+    text-decoration: none;
+    transition: .25s;
+    margin-right: 35px;
+    border: 1px solid #bababa;
+}
+
+.category-link:focus {
+    background-color: #3ca5bc;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #3ca5bc;
+}
+
+.category-link:hover {
+    background-color: #3ca5bc;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #3ca5bc;
+}
+
+.latest-posts {
+    width: 300px;
+    height: 400px;
+}
+
+.post-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+
+
+}
+
+.post-body {
+    padding: 30px 20px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+}
+
+.post-desc-container span,
+.post-desc-container p,
+.post-desc-container h1,h2,h3,h4,h5,h6,ol,ul,li{
+    color: white !important;
+}
+.post-desc-container{
+    overflow: hidden;
+    height: 120px;
+}
+
+
+.solid-hr {
+    border-top: 2px solid rgba(255, 255, 255, 0.37);
+}
+
+.post-category-link:hover {
+    text-decoration: none;
+    color: rgb(229, 229, 229) !important;
+}
+
+.author:hover {
+    text-decoration: none;
+    color: rgb(222, 105, 105) !important;
+}
+
+
+.post-title-link:hover {
+    text-decoration: none;
+}
+
+.post-title-link:hover .post-title {
+    color: #5088c9 !important;
+}
+
+.post-container:hover {
+    transform: scale(0.96);
+}
+
+.post-container:hover .post-body {
+    box-shadow: none;
+}
+
+.post-container {
+    transition: .25s ease-in-out;
+    margin-bottom: 40px;
+}
+
+.fa.fa-linkedin-square.ml-3.linkedin {
+    color: white;
+    transition: 1s;
+}
+
+.fa.fa-linkedin-square.ml-3.linkedin:hover {
+    transform: rotate(360deg);
+}
+
+.hidden-search-bar {
+    width: 100%;
+    background-color: white;
+    height: 73px;
+    margin-left: -100%;
+    transition: .25s;
+}
+
+.hidden-search-bar.active {
+    margin-left: 0;
+}
+
+#search-btn {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.search-input {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    padding: 8px;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-bottom: 2px solid #4646461a;
+    transition: .5s ease-in-out;
+    font-weight: 600;
+    color: #464646;
+    text-align: center;
+}
+
+.search-input:focus {
+    outline: none;
+    border-bottom: 2px solid #464646;
+}
+
+.search-input::placeholder {
+    color: #46464675;
+    font-weight: 600;
+}
+
+.times-icn {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 27px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.overlay-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(76, 156, 180, 0.801);
+    transform: translate(-50%,-50%);
+    transition: .25s;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.img-link{
+    overflow: hidden;
+}
+.img-link:hover .overlay-img{
+    opacity: 1;
+}
+
+.check-post{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-post span{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+.right-icon{
+    padding-top: 5px;
+    margin-left: 15px;
+}
+.post-body{
+    background-color: #14174c;
+}
+
+.content-detail ol li{
+    color: grey !important;
+}

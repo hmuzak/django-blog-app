@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>UnderOceanLife</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/material-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+</head>
+
+<body>
+    <div class="top-content-div top-container"
+        style="background-image: url({% static 'assets/img/wallpaper.jpg' %});height: 470px;background-position: center;background-repeat: no-repeat;background-size: cover;position: relative;">
+        <div class="top-bars">
+            <nav class="navbar navbar-dark navbar-expand-md fixed-top"
+                style="background-color: rgba(0, 0, 0, 0.733);padding: 15px 25px;">
+                <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler"
+                        data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navcol-1">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item" role="presentation"><a class="nav-link text-light active link-item"
+                                    href="/"
+                                    style="font-family: 'Barlow Semi Condensed', sans-serif;font-size: 18px;">Home</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link text-light active link-item"
+                                    href="#"
+                                    style="font-family: 'Barlow Semi Condensed', sans-serif;font-size: 18px;">About</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <i id="search-btn" class="material-icons"
+                                    style="color: rgba(255,255,255,0.67);">search</i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </nav>
+            <div class="hidden-search-bar fixed-top">
+                <form action="" class="search-form" method="post">
+                    {% csrf_token %}
+                    <input name="search" class="search-input" type="text" placeholder="What do you want to search?">
+                </form>
+                <span id="close-btn" class="material-icons times-icn">
+                    clear
+                </span>
+            </div>
+        </div>
+
+        <div class="text-white title-content-top">
+            <h1 class="text-center" style="font-size: 56px;font-family: 'Quattrocento Sans', sans-serif;">Django Blog
+                Template</h1>
+            <h1 class="text-center" style="font-size: 37px;font-family: 'Quattrocento Sans', sans-serif;">Hasan Muzak</h1>
+        </div>
+    </div>
+
+
+
+
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    
+    {% block content %}
+
+    {% endblock %}
+
+    <script>
+        $(document).ready(function () {
+            $('#search-btn').click(function () {
+                $('.hidden-search-bar').toggleClass('active')
+            })
+            $('#close-btn').click(function () {
+                $('.hidden-search-bar').removeClass('active')
+            });
+        })
+        function limitT(a) {
+            if (a.length > 240) return a.substr(0, 240)+"...";
+        }
+        $(".post-desc-container span").text(function() {
+          return limitT(this.innerHTML)
+        });
+    </script>
+</body>
+
+</html>
